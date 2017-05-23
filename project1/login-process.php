@@ -14,13 +14,15 @@ $result = mysqli_query($con, $sql);
 
 if(mysqli_num_rows($result) == 1)
 {
-    session_start();
-    
-    $_SESSION['login'] = TRUE;
-            
-            
-            
-    header("location:index.php");
+  //Login
+  session_start();
+  
+  $_SESSION['login'] = TRUE;
+  
+  header("Location:index.php");
+  
 }else{
-    header("location:login.php?error=1");
+  //Login not Ok
+  header("Location:login.php?error=1");
+  
 }

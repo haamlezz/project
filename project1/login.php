@@ -7,14 +7,13 @@
 <h1>Login</h1>
 <?php
     if(isset($_GET['error'])){
-        switch($_GET['error']){
-            case 1: echo '<p class="error">Invalid User ID or Password</p>';
-                    break;
-            case 2: echo '<p class="error">You are NOT logged in</p>';
-                    break;
+        switch ($_GET['error']) {
+            case 1: echo '<p>Invalid userid or password</p>';
+                break;
+            
+            case 2: echo '<p>Please login...</p>';
+                break;
         }
-        
-        
     }
 ?>
 <form action="login-process.php" method="POST">
