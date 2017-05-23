@@ -1,0 +1,17 @@
+a{
+    color:#009900;
+    text-decoration: none;
+}
+a:hover{
+    color:#33ff33;
+}
+div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.error{
+    color:#ff3300;
+    background-color: #ffcccc;
+    padding:10px;
+}
