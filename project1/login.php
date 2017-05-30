@@ -4,6 +4,7 @@
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <a href="register.php">Register</a>
 <h1>Login</h1>
 <?php
     if(isset($_GET['error'])){
@@ -12,6 +13,8 @@
                 break;
             
             case 2: echo '<p>Please login...</p>';
+                break;
+            case 3: echo '<p>Register completed</p>';
                 break;
         }
     }
